@@ -402,8 +402,23 @@ a {
 @media (max-width: 768px) {
 
     .about {
-        margin-top: 80px; /* Ajuste a margem superior conforme necessário */
+        height: 720px;
+        width: 450px;
+        font-size: 15px;
       }
+
+    .card-content {
+        height: 250px;
+        width: 400px;
+    }
+
+    .card-content2 {
+        position: relative;
+        top: 30px;
+        left: -1px;
+        height: 250px;
+        width: 400px;
+    }
 
     .hamburger01 {
         position: relative;
