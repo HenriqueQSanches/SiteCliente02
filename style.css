@@ -255,7 +255,148 @@ a {
     outline: none; /* Remove a borda em diferentes estados */
 }
 
+/* Essa parte será sobre os Cards */
 
+.cards h4 {
+    top: 15px;
+    font-size: 1.4rem;
+    color: rgb(120, 120, 120);
+    font-family: sans-serif;
+    margin: 25px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.about {
+    padding: 24px;
+    box-shadow: 1px 1px 1px 1px rgba(169, 169, 169);
+    margin: 25px;
+    border-radius: 5px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.card-content {
+    position: relative;
+    background-color: rgb(3, 169, 244);
+    font-family: sans-serif;
+    color: #fff;
+    height: 180px;
+    width: 850px;
+    box-shadow: 1px 1px 1px 1px rgba(169, 169, 169);
+    border-radius: 3px;
+}
+
+.card-content2 {
+    position: relative;
+    top: -180px;
+    left: 900px;
+    background-color: rgb(3, 169, 244);
+    background-image: linear-gradient(to right, rgb(3, 169, 244), rgb(142, 217, 252)); /* Gradiente linear que vai de rgb(254, 91, 97) (vermelho forte) até um branco translúcido */
+    font-family: sans-serif;
+    color: #fff;
+    height: 195px;
+    width: 850px;
+    box-shadow: 2px 2px 2px 2px rgba(169, 169, 169);
+    border-radius: 3px;
+}
+
+.card-content2 span {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.card-content2 p {
+    position: relative;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px;
+    top: 15px;
+    left: 15px;
+}
+
+.card-content2 button {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    background-color: rgb(254, 91, 97); /* Cor de fallback caso o navegador não suporte gradientes */
+    background-image: linear-gradient(to right, rgb(254, 91, 97), rgba(255, 255, 255, 0.5)); /* Gradiente linear que vai de rgb(254, 91, 97) (vermelho forte) até um branco translúcido */
+    border: none;
+    color: white;
+    padding: 6px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px 1px rgb(3, 121, 184);
+}
+
+.card-content p {
+    position: relative;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px;
+    top: 15px;
+    left: 15px;
+}
+
+.card-content a {
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #f4ff81;
+    font-size: 18px;
+    justify-content: space-between;
+    margin: 10px;
+    left: 20px;
+    top: 50px;
+}
+
+.card-content a:hover {
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #f4ff81;
+    font-size: 18px;
+}
+
+.card-content span {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    margin: 15px;
+    font-size: 25px;
+}
 
 /* Estilos do hamburger dentro do @media */
 @media (max-width: 768px) {
