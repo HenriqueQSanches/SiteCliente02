@@ -426,8 +426,144 @@ a {
         border-radius: 10px;
     }
 
+    .nav .menu span {
+        font-size: 0px;
+        margin: 0px;
+    }
 
-/* Estilos do LOGO dentro do @media */
+    .hamburger:active,
+    .hamburger:focus,
+    .hamburger:visited {
+        outline: none; /* Remove a borda em diferentes estados */
+    }
+
+    .hamburger {
+        position: relative;
+        left: -40px;
+        display: block;
+        border: none;
+        outline: none;
+        padding: 10px;
+        pointer-events: padding;
+    }
+
+    .hamburger-third {
+        top: 7px; /* Ajuste a posição da terceira linha */
+        outline: none;
+        border: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 20px;
+        opacity: 0;
+    }
+
+    .nav-list a:hover {
+        font-size: 25px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav-list button {
+        border: none;
+        outline: none;
+    }
+    
+    .nav-list button:hover {
+        border: none;
+        outline: none;
+    }
+    
+    .nav-list button::before {
+        border: none;
+        outline: none;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.1s 0.1s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.1s 0.1s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.1s 0.1s;
+    }
+
+    /* Estilos ativos */
+
+    .nav2.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav2.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav2.active .hamburger {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        top: -100px;
+        left: 250px;
+        border-top-color: transparent;
+        outline: none;
+        border: none;
+    }
+
+    .nav2.active .hamburger::before {
+        transform: rotate(150deg);
+        outline: none;
+        border: none;
+    }
+
+    .nav2.active .hamburger::after {
+        transform: rotate(-150deg);
+        top: -7px;
+        outline: none;
+        border: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hamburger01 {
+        position: relative;
+        left: -5px;
+        height: 50px;
+        width: 50px;
+        color: rgb(7, 144, 210);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .nav2 {
+        max-width: 1280px;
+        height: 50px;
+        margin-inline: 0; /* Alterado para 0 */
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
 
     .nav .menu span {
         font-size: 0px;
@@ -526,7 +662,7 @@ a {
         height: 150px;
         width: 150px;
         top: -100px;
-        left: 300px;
+        left: 220px;
         border-top-color: transparent;
         outline: none;
         border: none;
