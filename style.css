@@ -573,7 +573,7 @@ a {
     .hamburger:active,
     .hamburger:focus,
     .hamburger:visited {
-        outline: none; /* Remove a borda em diferentes estados */
+        outline: none;
     }
 
     .hamburger {
