@@ -240,11 +240,8 @@ a {
 }
 
 .hamburger {
-    position: relative;
     left: -40px;
     overflow: hidden;
-    display: none;
-    border: none;
     background: none;
     cursor: pointer;
     z-index: 1;
@@ -277,8 +274,6 @@ a {
         max-width: 1280px;
         height: 50px;
         margin-inline: 0; /* Alterado para 0 */
-        display: flex;
-        justify-content: flex-start;
         border-radius: 10px;
     }
 
@@ -389,14 +384,14 @@ a {
     }
 
     .nav2.active .hamburger::before {
-        transform: rotate(150deg);
+        transform: rotate(50deg);
         outline: none;
         border: none;
     }
 
     .nav2.active .hamburger::after {
-        transform: rotate(-150deg);
-        top: -7px;
+        transform: rotate(-50deg);
+        top: 2px;
         outline: none;
         border: none;
     }
@@ -579,7 +574,6 @@ a {
     .hamburger {
         position: relative;
         left: -40px;
-        display: block;
         border: none;
         outline: none;
         padding: 10px;
@@ -661,24 +655,20 @@ a {
         position: relative;
         height: 150px;
         width: 150px;
-        top: -100px;
-        left: 220px;
+        top: -130px;
+        left: 175px;
         border-top-color: transparent;
         outline: none;
         border: none;
     }
 
     .nav2.active .hamburger::before {
-        transform: rotate(150deg);
-        outline: none;
-        border: none;
+        transform: rotate(50deg);
     }
 
     .nav2.active .hamburger::after {
-        transform: rotate(-150deg);
-        top: -7px;
-        outline: none;
-        border: none;
+        transform: rotate(-50deg);
+        top: 3px;
     }
 
 }
