@@ -401,6 +401,10 @@ a {
 /* Estilos do hamburger dentro do @media */
 @media (max-width: 768px) {
 
+    .about {
+        margin-top: 80px; /* Ajuste a margem superior conforme necessário */
+      }
+
     .hamburger01 {
         position: relative;
         left: -5px;
@@ -440,6 +444,7 @@ a {
         outline: none;
         padding: 10px;
         pointer-events: padding;
+        z-index: 9999;
     }
 
     .hamburger-third {
@@ -463,6 +468,7 @@ a {
         align-items: center;
         gap: 0;
         pointer-events: none;
+        z-index: 9998;
     }
 
     .nav-list a {
