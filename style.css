@@ -173,6 +173,7 @@ a {
     position: absolute;
     background-color: rgb(249, 249, 249);
     min-width: 150px;
+    min-height: 50px;
     box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -269,7 +270,6 @@ a {
 .nav-list a:hover {
     text-decoration: none;
     color: rgb(120, 120, 120);
-    font-size: 16px; /* Aumenta levemente o tamanho da fonte ao passar o mouse */
 }
 
 .nav-list button {
@@ -800,7 +800,8 @@ a {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 110px;
+    min-height: 100px;
     box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -809,7 +810,7 @@ a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: contents;
 }
 
 .dropdown-content a:hover {background-color: transparent}
