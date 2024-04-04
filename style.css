@@ -16,6 +16,10 @@
     margin-right: 0; /* Certifique-se de que não há margem à direita */
 }
 
+.brFlag {
+    height: 50px;
+}
+
 .bell1 {
     position: relative;
     height: 25px;
